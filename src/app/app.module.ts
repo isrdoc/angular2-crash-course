@@ -12,6 +12,7 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
 import { PageMainComponent } from './components/page-main/page-main.component';
 import { PageFooterComponent } from './components/page-footer/page-footer.component';
 import { BoxImageGalleryComponent } from './components/box-image-gallery/box-image-gallery.component';
+import { SortGalleryImagesPipe } from './pipes/sort-gallery-images.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BoxImageGalleryComponent } from './components/box-image-gallery/box-ima
     PageHeaderComponent,
     PageMainComponent,
     PageFooterComponent,
-    BoxImageGalleryComponent
+    BoxImageGalleryComponent,
+    SortGalleryImagesPipe
   ],
   imports: [
     BrowserModule,

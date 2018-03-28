@@ -5,7 +5,7 @@
     <div class="image" *ngFor="let image of images">
       <div class="thumb" [ngStyle]="{ 'background-image': 'url(' + image.thumb + ')' }"></div>
 
-      <div class="caption">{{image.caption}}</div>
+      <div class="caption">{{image.caption | uppercase}}</div>
     </div>
   </div>
 </div>
