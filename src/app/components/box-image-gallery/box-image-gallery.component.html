@@ -1,0 +1,11 @@
+<div class="image-gallery">
+  <h2>Image gallery</h2>
+
+  <div class="images">
+    <div class="image" *ngFor="let image of images">
+      <div class="thumb" [ngStyle]="{ 'background-image': 'url(' + image.thumb + ')' }"></div>
+
+      <div class="caption">{{image.caption}}</div>
+    </div>
+  </div>
+</div>
