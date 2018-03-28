@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { DataService } from './services/data.service';
+
+import { GalleryImageData } from './data/gallery-images.data';
 
 import { AppComponent } from './app.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
@@ -19,7 +23,9 @@ import { BoxImageGalleryComponent } from './components/box-image-gallery/box-ima
     BoxImageGalleryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forRoot(GalleryImageData)
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
